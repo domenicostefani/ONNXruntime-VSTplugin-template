@@ -21,7 +21,7 @@
             "plugins": [
                 {
                     "uid": "OnnxTemplatePlugin",
-                    "path": "OnnxTemplatePlugin.vst3",
+                    "path": "/home/mind/plugins/OnnxTemplatePlugin.vst3",
                     "name": "onnxtemplate",
                     "type": "vst3x"
                 }
