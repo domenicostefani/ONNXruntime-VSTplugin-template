@@ -1,3 +1,4 @@
 [submodule "libs/onnxruntime"]
 	path = libs/onnxruntime
 	url = https://github.com/microsoft/onnxruntime
+    ignore = dirty

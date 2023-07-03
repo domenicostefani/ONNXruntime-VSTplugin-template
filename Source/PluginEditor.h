@@ -1,9 +1,5 @@
 /*
-  ==============================================================================
-
-    This file contains the basic framework code for a JUCE plugin editor.
-
-  ==============================================================================
+ * This file contains the basic framework code for a JUCE plugin that uses the ONNX runtime for deep inference.
 */
 
 #pragma once

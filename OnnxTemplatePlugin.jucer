@@ -2,9 +2,12 @@
 
 <JUCERPROJECT id="iv3vPV" name="OnnxTemplatePlugin" projectType="audioplug"
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
-              jucerFormatVersion="1" postExportShellCommandPosix="bash %%1%%/create_compile_scripts.sh %%1%%">
+              jucerFormatVersion="1" postExportShellCommandPosix="bash %%1%%/create_compile_scripts.sh %%1%%"
+              headerPath="../../libs/onnxruntime/include&#10;../../libs/onnxruntime/include/onnxruntime/core/session/"
+              pluginFormats="buildVST3">
   <MAINGROUP id="AKnaBS" name="OnnxTemplatePlugin">
     <GROUP id="{7AE8176A-B7A6-055D-28C8-6A1E0631FD82}" name="Source">
+      <FILE id="A6bvei" name="OnnxWrapper.h" compile="0" resource="0" file="Source/OnnxWrapper.h"/>
       <FILE id="BqggQZ" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="OJpyJF" name="PluginProcessor.h" compile="0" resource="0"
@@ -17,10 +20,10 @@
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
                JUCE_WEB_BROWSER="0"/>
   <EXPORTFORMATS>
-    <LINUX_MAKE targetFolder="Builds/linux-aarch64">
+    <LINUX_MAKE targetFolder="Builds/linux-aarch64" externalLibraries="onnxruntime">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="OnnxTemplatePlugin"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="OnnxTemplatePlugin"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="OnnxTemplatePlugin" libraryPath="../../libs/onnxruntime-build-linux_aarch64"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="OnnxTemplatePlugin" libraryPath="../../libs/onnxruntime-build-linux_aarch64"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
