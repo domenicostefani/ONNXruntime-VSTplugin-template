@@ -20,10 +20,9 @@
             ],
             "plugins": [
                 {
-                    "uid": "OnnxTemplatePlugin",
-                    "path": "OnnxTemplatePlugin.vst3",
+                    "path": "/home/mind/plugins/OnnxTemplatePlugin.so",
                     "name": "onnxtemplate",
-                    "type": "vst3x"
+                    "type": "vst2x"
                 }
             ]
         }

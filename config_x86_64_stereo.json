@@ -5,17 +5,17 @@
     "tracks": [
         {
             "name": "main",
-            "channels": 1,
+            "channels": 2,
             "inputs": [
                 {
-                    "engine_channel": 1,
-                    "track_channel": 0
+                    "engine_bus": 0,
+                    "track_bus": 0
                 }
             ],
             "outputs": [
                 {
-                    "engine_channel": 1,
-                    "track_channel": 1
+                    "engine_bus": 0,
+                    "track_bus": 0
                 }
             ],
             "plugins": [
@@ -28,7 +28,5 @@
             ]
         }
     ],
-    "midi": {
-        "cc_mappings": []
-    }
+    "midi": {}
 }
