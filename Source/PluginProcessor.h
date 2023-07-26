@@ -6,7 +6,7 @@
 
 #include <JuceHeader.h>
 
-#include "OnnxWrapper.h" // Put your ONNX code here
+#include "onnxwrapper.h" // Put your ONNX code here
 
 //==============================================================================
 /**

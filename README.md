@@ -5,6 +5,8 @@ This is a template plugin for the [ONNX](https://onnx.ai/) framework. It is inte
 Crosscompilation has been tested as a headless plugin for the Elk Audio OS on a Raspberry PI4.  
 `/libs` includes an onnxruntime (`1.7.0`) binary for linux-aarch64.
 
+Clone with `--recursive` to get the submodule dependencies.
+
 ## Instruction for Elk Audio OS
 
 1. Open `OnnxTemplatePlugin.jucer` with the Projucer and save to generate the project files.
